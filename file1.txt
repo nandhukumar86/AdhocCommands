@@ -7,15 +7,20 @@ Code committed in master again
 
 Code committed in master again
 
-<<<<<<< HEAD
 ---------
 =======
 
 
 
+=======
+---------
 
+
+Sample added
 
 
 
 ///////////
->>>>>>> a2b2a2326f8c67675b25e344a79099d905777593
+
+=======
+
