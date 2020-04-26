@@ -66,5 +66,18 @@ Update Local Active Branch from Remote Branch (if the names are same)
 ---------------------------------------------------------------------
 git pull
 
+Other userful Commands
+======================
+
+Lists all the Remote Repository names configured in Local Repository
+--------------------------------------------------------------------
+git remote
+git remote -v
+
+(Note): -v lists the remote with Remote Repository
+
+
+git status
+
 
 
