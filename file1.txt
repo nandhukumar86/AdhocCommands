@@ -3,3 +3,6 @@ close all -- files
 adding second line
 
 added the line from remote
+
+
+added the line from local
