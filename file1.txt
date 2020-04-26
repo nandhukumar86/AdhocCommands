@@ -1,3 +1,6 @@
+Important Commands to execute
+=============================
+
 Clone Remote Repository to Local Repository
 -------------------------------------------
 git clone "url"
@@ -9,16 +12,54 @@ git init
 Create Local Branch
 -------------------
 git branch <branch-name>
+Note: Better keep the names sync in Local and Remote branches, otherwise push will create a new branch with name as in local.
 
 Switch/checkout to Local Branch
 -------------------------------
 git checkout <branch-name>
-
-Create a Local Branch and checkout
-----------------------------------
-git checkout -b <branch-name>
+git checkout -b <branch-name
+Note: -b Create a Local Branch and checkout
 
 Merge Local Branch (<branch-name>) to Active Local Branch(checked out Local Branch)
 -----------------------------------------------------------------------------------
 git merge <branch-name>
+
+List all Branches
+-----------------------
+git branch
+git branch -a
+Note: -a will list Local and Remote branches
+
+Commit changes to Local Active Branch
+-------------------------------------
+git commit -a -m "Message"
+
+Delete a Local Branch
+---------------------
+git branch -d <branch-name>
+git branch -D <branch-name>     
+Note: -D will force delete
+
+
+
+Network/Remote Repository Interactions: clone, pull, push, fetch
+================================================================
+
+Update Local Active Branch from Remote Branch (if the names are different)
+--------------------------------------------------------------------------
+git pull <remote-name> <branch-name>
+
+Update Local Active Branch to Remote Branch
+-------------------------------------------
+git push -u <remote-name> <branch-name>
+
+Update All Local Branch to Remote Branch
+----------------------------------------
+git push --all <remote-name>
+
+Update Local Active Branch from Remote Branch (if the names are same)
+---------------------------------------------------------------------
+git pull
+
+
 
