@@ -1,0 +1,24 @@
+Clone Remote Repository to Local Repository
+-------------------------------------------
+git clone "url"
+
+Create Local Repository
+-----------------------
+git init
+
+Create Local Branch
+-------------------
+git branch <branch-name>
+
+Switch/checkout to Local Branch
+-------------------------------
+git checkout <branch-name>
+
+Create a Local Branch and checkout
+----------------------------------
+git checkout -b <branch-name>
+
+Merge Local Branch (<branch-name>) to Active Local Branch(checked out Local Branch)
+-----------------------------------------------------------------------------------
+git merge <branch-name>
+
