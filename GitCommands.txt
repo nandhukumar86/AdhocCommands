@@ -19,7 +19,9 @@ with name as in local.
 Switch/checkout to Local Branch
 -------------------------------
 git checkout <branch-name>
-git checkout -b <branch-name
+git checkout -b <branch-name>
+git checkout -b <branch-name> --track origin/<branch-name>
+
 
 (Note): -b Create a Local Branch and checkout
 
