@@ -47,6 +47,16 @@ git branch -D <branch-name>
 
 (Note): -D will force delete
 
+Saving(stash) and Retrieving(pop) the Local changes
+---------------------------------------
+git stash
+git stash save "some description"
+
+git stash list
+
+git stash pop
+git stash pop <stash-id>
+
 
 
 Network/Remote Repository Interactions: clone, pull, push, fetch
