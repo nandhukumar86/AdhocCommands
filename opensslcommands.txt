@@ -1,0 +1,25 @@
+openssl  version -a
+
+Generate a Key
+--------------
+openssl genrsa -out app.key 2048
+
+Extract the public key
+----------------------
+openssl rsa -in app.key -pubout -out app_public.key
+
+Create CSR (common name FQN is important: *.abc.com)
+----------------------------------------------------
+openssl req -new -key app.key -out app.csr
+
+Verify the Certificate
+----------------------
+openssl req -text -n app.csr -noout -verify
+
+Create Certificate
+------------------
+openssl x509 -in app.csr -out app.crt -req -signkey app.key -days 365
+
+Create pfx file
+---------------
+openssl pkcs12 -inkey app.key -in app.crt -export -out app.pfx
