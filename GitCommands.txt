@@ -51,11 +51,14 @@ Saving(stash) and Retrieving(pop) the Local changes
 ---------------------------------------
 git stash
 git stash save "some description"
+git stash push -m "Some meaningful name"
 
 git stash list
 
 git stash pop
 git stash pop <stash-id>
+
+git stash apply <stash-id>
 
 
 
